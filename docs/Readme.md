@@ -46,9 +46,18 @@ bash
 This script is responsible for generating the Swagger doc using route metadata.
 
 ```js
-const swaggerAutogen = require('swagger-autogen')(); const doc = { info: { title: 'Person API', description: 'CRUD API for Person model',
-  }, host: 'localhost:3000', schemes: ['http']
-}; const outputFile = './swagger-output.json'; const endpointsFiles = ['./index.js']; swaggerAutogen(outputFile, endpointsFiles, doc);
+const swaggerAutogen = require('swagger-autogen')(); 
+const doc = { 
+  info: { 
+    title: 'Person API', 
+    description: 'CRUD API for Person model',
+  }, 
+  host: 'localhost:3000', 
+  schemes: ['http']
+}; 
+const outputFile = './swagger-output.json'; 
+const endpointsFiles = ['./index.js']; 
+swaggerAutogen(outputFile, endpointsFiles, doc);
 ``` 
 
 ### Step 2: Annotate Your Routes
