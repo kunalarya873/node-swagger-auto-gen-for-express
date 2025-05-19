@@ -7,7 +7,7 @@
 ### 1. Clone the Repository & Install Dependencies 
 ```bash
 git clone https://github.com/kunalarya873/node-swagger-auto-gen-for-express.git
-cd code-editor
+cd node-swagger-auto-gen-for-express
 npm install
 ```
 
